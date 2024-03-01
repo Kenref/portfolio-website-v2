@@ -4,12 +4,17 @@
 }
 
 h1,
-h2 {
+h2,
+p {
 	color: #e0e0e0;
 }
 
 body {
 	background-color: #121416;
-	background-color: white;
+	/* background-color: white; */
 	/* #040404 */
+}
+
+img {
+	filter: invert(1);
 }

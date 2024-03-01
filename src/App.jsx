@@ -47,10 +47,17 @@ function App() {
 			<div
 				style={{
 					height: "100vh",
+					display: "flex",
+					flexDirection: "column",
+					alignItems: "center",
+					justifyContent: "center",
 				}}
 			>
 				<h1 style={{ textAlign: "center" }}>Skills</h1>
-				<div style={{ display: "flex", justifyContent: "space-around" }}>
+				<div
+					style={{ display: "flex", justifyContent: "center", gap: "20px" }}
+					className="skills-container"
+				>
 					<SkillSubsection
 						title="Languages"
 						contents={languages}
