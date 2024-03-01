@@ -6,25 +6,36 @@ import SkillSubsection from "./components/SkillSubsection";
 // next step figure out how to put skills in a sleek way
 function App() {
 	const languages = [
-		{ title: "HTML", src: "/HTML-Icon.png", alt: "HTML Icon" },
-		{ title: "CSS", src: "/Css-Icon.png", alt: "CSS Icon" },
-		{ title: "Javascript", src: "", alt: "" },
-		{ title: "Python", src: "", alt: "" },
+		{ title: "HTML", src: "public/HTML-Icon.png", alt: "HTML Icon" },
+		{ title: "CSS", src: "public/Css-Icon.png", alt: "CSS Icon" },
+		{ title: "Javascript", src: "public/Js-Icon.png", alt: "JS ICON" },
+		{ title: "Python", src: "public/Python-Icon.png", alt: "Python Icon" },
 	];
 
 	const libAndFram = [
-		{ title: "React", src: "", alt: "" },
-		{ title: "Bootstrap", src: "", alt: "" },
-		{ title: "Jest", src: "", alt: "" },
-		{ title: "Django (Beginner)", src: "", alt: "" },
-		{ title: "Three.js (Beginner)", src: "", alt: "" },
+		{ title: "React", src: "public/React-Icon.png", alt: "React Icon" },
+		{
+			title: "Bootstrap",
+			src: "public/Bootstrap-Icon.png",
+			alt: "Bootstrap Icon",
+		},
+		{ title: "Jest", src: "public/Jest-Icon.png", alt: "Jest Icon" },
+		{
+			title: "Django (Beginner)",
+			src: "public/Django-Icon.png",
+			alt: "Django Icon",
+		},
+		{
+			title: "Three.js (Beginner)",
+			src: "public/Threejs-Icon.png",
+			alt: "Three.js Icon",
+		},
 	];
 
-	const Other = [
-		{ title: "Git", src: "", alt: "" },
-		{ title: "Vite", src: "", alt: "" },
-		{ title: "Node.js", src: "", alt: "" },
-		{ title: "Python", src: "", alt: "" },
+	const other = [
+		{ title: "Git", src: "public/GitHub-Icon.png", alt: "Git Icon" },
+		{ title: "Vite", src: "public/Vite-Icon.png", alt: "Vite Icon" },
+		{ title: "Node.js", src: "public/Nodejs-Icon.png", alt: "Node.js Icon" },
 	];
 
 	return (
@@ -50,7 +61,7 @@ function App() {
 					/>
 					<SkillSubsection
 						title="Other"
-						contents={Other}
+						contents={other}
 					/>
 				</div>
 			</div>

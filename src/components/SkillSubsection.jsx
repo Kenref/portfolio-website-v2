@@ -2,14 +2,25 @@ import Skill from "./Skill";
 
 function SkillSubsection({ title, contents }) {
 	return (
-		<div>
+		<div
+			style={{
+				border: "solid red 2px",
+			}}
+		>
 			<h2>{title}</h2>
-			{contents.map((content, index) => {
-				<Skill
-					content={content}
-					index={index}
-				/>;
-			})}
+			<div
+				style={{
+					display: "grid",
+					gridTemplateColumns: "repeat(2, 1fr)",
+				}}
+			>
+				{contents.map((content, index) => (
+					<Skill
+						content={content}
+						key={index}
+					/>
+				))}
+			</div>
 		</div>
 	);
 }
