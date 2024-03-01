@@ -3,6 +3,11 @@
 	padding: 0;
 }
 
+h1,
+h2 {
+	color: #e0e0e0;
+}
+
 body {
 	background-color: #121416;
 	/* #040404 */
