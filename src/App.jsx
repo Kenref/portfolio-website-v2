@@ -6,8 +6,8 @@ import SkillSubsection from "./components/SkillSubsection";
 // next step figure out how to put skills in a sleek way
 function App() {
 	const languages = [
-		{ title: "HTML", src: "public/Html-Icon.png", alt: "" },
-		{ title: "CSS", src: "public/Css-Icon.png", alt: "" },
+		{ title: "HTML", src: "/HTML-Icon.png", alt: "HTML Icon" },
+		{ title: "CSS", src: "/Css-Icon.png", alt: "CSS Icon" },
 		{ title: "Javascript", src: "", alt: "" },
 		{ title: "Python", src: "", alt: "" },
 	];

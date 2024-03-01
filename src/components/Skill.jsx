@@ -1,13 +1,13 @@
-function Skill({ src, alt, title }) {
+function Skill({ content }) {
 	return (
 		<div>
 			<img
-				src={src}
-				alt={alt}
+				src={content.src}
+				alt={content.alt}
 			/>
-			<p>{title}</p>
+			<p>{content.title}</p>
 		</div>
 	);
 }
 
-export default skill;
+export default Skill;
