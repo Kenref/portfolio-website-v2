@@ -10,7 +10,7 @@ function App() {
 		{ title: "Javascript", src: "public/Js-Icon.png", alt: "JS ICON" },
 		{ title: "Python", src: "public/Python-Icon.png", alt: "Python Icon" },
 	];
-
+	// TODO replace three.js logo
 	const libAndFram = [
 		{ title: "React", src: "public/React-Icon.png", alt: "React Icon" },
 		{
@@ -52,9 +52,9 @@ function App() {
 					justifyContent: "center",
 				}}
 			>
-				<h1 style={{ textAlign: "center" }}>Skills</h1>
+				<h1 style={{ textAlign: "center", marginBottom: "20px" }}>Skills</h1>
 				<div
-					style={{ display: "flex", justifyContent: "center", gap: "20px" }}
+					style={{ display: "flex", justifyContent: "center", gap: "5px" }}
 					className="skills-container"
 				>
 					<SkillSubsection
