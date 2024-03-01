@@ -1,3 +1,5 @@
+import { PropTypes } from "prop-types";
+
 function Skill({ content }) {
 	return (
 		<div
@@ -12,5 +14,7 @@ function Skill({ content }) {
 		</div>
 	);
 }
+
+Skill.propTypes = { content: PropTypes.object };
 
 export default Skill;

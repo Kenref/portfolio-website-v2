@@ -1,4 +1,3 @@
-import React, { useEffect, useState, useRef } from "react";
 import "./App.css";
 import Spline from "@splinetool/react-spline";
 import SkillSubsection from "./components/SkillSubsection";

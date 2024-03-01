@@ -1,4 +1,5 @@
 import Skill from "./Skill";
+import { PropTypes } from "prop-types";
 
 function SkillSubsection({ title, contents }) {
 	return (
@@ -24,5 +25,10 @@ function SkillSubsection({ title, contents }) {
 		</div>
 	);
 }
+
+SkillSubsection.propTypes = {
+	title: PropTypes.string,
+	contents: PropTypes.array,
+};
 
 export default SkillSubsection;
