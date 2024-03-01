@@ -10,7 +10,11 @@ function App() {
 				scene="https://prod.spline.design/DQiuGtWGXvHI6syP/scene.splinecode"
 				style={{ height: "100vh" }}
 			/>
-			<div style={{ height: "100vh" }}>hi</div>
+			<div style={{ height: "100vh", color: "white" }}>skills</div>
+			<div style={{ height: "100vh", color: "white" }}>projects</div>
+			<div style={{ height: "100vh", color: "white" }}>
+				contact informations
+			</div>
 		</div>
 	);
 }
