@@ -5,7 +5,7 @@ import { PropTypes } from "prop-types";
 function SkillSubsection({ title, contents }) {
 	return (
 		<div
-			className="skills-section"
+			className="skill-group"
 			style={{
 				display: "flex",
 				flexDirection: "column",

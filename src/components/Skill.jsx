@@ -3,7 +3,7 @@ import { PropTypes } from "prop-types";
 function Skill({ content }) {
 	return (
 		<div
-			className="skill"
+			className="individual-skill"
 			style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
 		>
 			<img
