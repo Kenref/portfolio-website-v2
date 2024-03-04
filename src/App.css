@@ -19,26 +19,48 @@ img {
 	filter: invert(1);
 }
 
-.skill-group {
+.skill-group-animation {
+	position: relative;
+	/* padding: "10px", */
+	z-index: 100;
+	/* background: radial-gradient(
+		400px circle at var(--mouse-x) var(--mouse-y),
+		rgba(255, 255, 255, 0.4),
+		transparent 40%
+	); */
 }
 
-.skill-group::before {
-	background: radial-gradient(
-		600px circle at 100px 100px rgba(255, 255, 255, 0.6),
-		transparent 40%
-	);
+.skill-group-animation::before,
+.skill-group-animation::after {
 	border-radius: inherit;
 	content: "";
 	height: 100%;
 	left: 0px;
+	opacity: 0;
 	position: absolute;
 	top: 0px;
-	width: 100%;
-	z-index: 2;
-	opacity: 0;
 	transition: opacity 500ms;
+	width: 100%;
 }
 
-.skill-group:hover::before {
+.skill-group-animation::before {
+	background: radial-gradient(
+		800px circle at var(--mouse-x) var(--mouse-y),
+		rgba(255, 255, 255, 0.06),
+		transparent 40%
+	);
+	z-index: 3;
+}
+
+.skill-group-animation::after {
+	background: radial-gradient(
+		600px circle at var(--mouse-x) var(--mouse-y),
+		rgba(255, 255, 255, 0.4),
+		transparent 40%
+	);
+	z-index: 1;
+}
+
+.skill-group-animation:hover::before {
 	opacity: 1;
 }

@@ -16,7 +16,7 @@ function SkillSubsection({ title, contents }) {
 	return (
 		<div
 			onPointerMove={(e) => onMouseMove(e)}
-			className="skill-group"
+			className="skill-group-animation"
 			style={{
 				display: "flex",
 				flexDirection: "column",
@@ -24,13 +24,9 @@ function SkillSubsection({ title, contents }) {
 				backgroundColor: "rgba(255,255,255,0.02)",
 				border: "1px solid rgba(255,255,255,0.1)",
 				borderRadius: "10px",
-				position: "relative",
-				// padding: "10px",
-				zIndex: "100",
+
 				"--mouse-x": `${mousePosition.x}px`,
 				"--mouse-y": `${mousePosition.y}px`,
-				background:
-					"radial-gradient(400px circle at var(--mouse-x) var(--mouse-y), rgba(255,255,255,0.4), transparent 40%)",
 			}}
 		>
 			<h2 style={{ margin: "10px" }}>{title}</h2>
