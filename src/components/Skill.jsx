@@ -4,7 +4,13 @@ function Skill({ content }) {
 	return (
 		<div
 			className="individual-skill"
-			style={{ display: "flex", flexDirection: "column", alignItems: "center" }}
+			style={{
+				display: "flex",
+				flexDirection: "column",
+				alignItems: "center",
+				zIndex: "-10",
+				border: "2px solid red",
+			}}
 		>
 			<img
 				src={content.src}
