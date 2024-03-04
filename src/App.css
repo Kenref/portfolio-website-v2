@@ -19,15 +19,13 @@ img {
 	filter: invert(1);
 }
 
+/* .skills-container:hover > .skill-group-animation::after {
+	opacity: 1;
+} */
+
 .skill-group-animation {
 	position: relative;
-	/* padding: "10px", */
 	z-index: 100;
-	/* background: radial-gradient(
-		400px circle at var(--mouse-x) var(--mouse-y),
-		rgba(255, 255, 255, 0.4),
-		transparent 40%
-	); */
 }
 
 .skill-group-animation::before,

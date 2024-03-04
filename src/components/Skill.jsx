@@ -8,7 +8,6 @@ function Skill({ content }) {
 				display: "flex",
 				flexDirection: "column",
 				alignItems: "center",
-				zIndex: "-10",
 			}}
 		>
 			<img

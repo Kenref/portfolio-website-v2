@@ -24,25 +24,27 @@ function SkillSubsection({ title, contents }) {
 				backgroundColor: "rgba(255,255,255,0.02)",
 				border: "1px solid rgba(255,255,255,0.1)",
 				borderRadius: "10px",
-
+				padding: "10px",
 				"--mouse-x": `${mousePosition.x}px`,
 				"--mouse-y": `${mousePosition.y}px`,
 			}}
 		>
-			<h2 style={{ margin: "10px" }}>{title}</h2>
-			<div
-				style={{
-					display: "grid",
-					gap: "10px",
-					gridTemplateColumns: "repeat(2, 1fr)",
-				}}
-			>
-				{contents.map((content, index) => (
-					<Skill
-						content={content}
-						key={index}
-					/>
-				))}
+			<div className="content">
+				<h2 style={{ margin: "10px" }}>{title}</h2>
+				<div
+					style={{
+						display: "grid",
+						gap: "10px",
+						gridTemplateColumns: "repeat(2, 1fr)",
+					}}
+				>
+					{contents.map((content, index) => (
+						<Skill
+							content={content}
+							key={index}
+						/>
+					))}
+				</div>
 			</div>
 		</div>
 	);
