@@ -53,10 +53,7 @@ function App() {
 				}}
 			>
 				<h1 style={{ textAlign: "center", marginBottom: "20px" }}>Skills</h1>
-				<div
-					style={{ display: "flex", justifyContent: "center", gap: "5px" }}
-					className="skills-container"
-				>
+				<div style={{ display: "flex", justifyContent: "center", gap: "5px" }}>
 					<SkillSubsection
 						title="Languages"
 						contents={languages}

@@ -16,7 +16,7 @@ function SkillSubsection({ title, contents }) {
 	return (
 		<div
 			onPointerMove={(e) => onMouseMove(e)}
-			className="skill-group-animation"
+			className="card"
 			style={{
 				display: "flex",
 				flexDirection: "column",
@@ -29,22 +29,20 @@ function SkillSubsection({ title, contents }) {
 				"--mouse-y": `${mousePosition.y}px`,
 			}}
 		>
-			<div className="content">
-				<h2 style={{ margin: "10px" }}>{title}</h2>
-				<div
-					style={{
-						display: "grid",
-						gap: "10px",
-						gridTemplateColumns: "repeat(2, 1fr)",
-					}}
-				>
-					{contents.map((content, index) => (
-						<Skill
-							content={content}
-							key={index}
-						/>
-					))}
-				</div>
+			<h2 style={{ margin: "10px" }}>{title}</h2>
+			<div
+				style={{
+					display: "grid",
+					gap: "10px",
+					gridTemplateColumns: "repeat(2, 1fr)",
+				}}
+			>
+				{contents.map((content, index) => (
+					<Skill
+						content={content}
+						key={index}
+					/>
+				))}
 			</div>
 		</div>
 	);

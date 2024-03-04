@@ -1,3 +1,8 @@
+:root {
+	--background-colour: #060808;
+	--font-colour: #e0e0e0;
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -6,12 +11,11 @@
 h1,
 h2,
 p {
-	color: #e0e0e0;
+	color: var(--font-colour);
 }
 
 body {
-	background-color: #121416;
-	/* background-color: white; */
+	background-color: var(--background-colour);
 	/* #040404 */
 }
 
@@ -19,18 +23,15 @@ img {
 	filter: invert(1);
 }
 
-/* .skills-container:hover > .skill-group-animation::after {
-	opacity: 1;
-} */
-
-.skill-group-animation {
+/* hover gradient effect*/
+.card {
 	position: relative;
 	z-index: 100;
 }
 
-.skill-group-animation::before,
-.skill-group-animation::after {
-	border-radius: inherit;
+.card::before,
+.card::after {
+	/* border-radius: inherit; */
 	content: "";
 	height: 100%;
 	left: 0px;
@@ -41,7 +42,7 @@ img {
 	width: 100%;
 }
 
-.skill-group-animation::before {
+.card::before {
 	background: radial-gradient(
 		800px circle at var(--mouse-x) var(--mouse-y),
 		rgba(255, 255, 255, 0.06),
@@ -50,7 +51,7 @@ img {
 	z-index: 3;
 }
 
-.skill-group-animation::after {
+.card::after {
 	background: radial-gradient(
 		600px circle at var(--mouse-x) var(--mouse-y),
 		rgba(255, 255, 255, 0.4),
@@ -59,6 +60,6 @@ img {
 	z-index: 1;
 }
 
-.skill-group-animation:hover::before {
+.card:hover::before {
 	opacity: 1;
 }
