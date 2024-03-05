@@ -19,7 +19,7 @@ p {
 
 body {
 	background-color: var(--background-colour);
-	font-family: Inter;
+	font-family: Inter, sans-serif;
 }
 
 .skill > img {
@@ -114,4 +114,18 @@ img {
 
 .link:hover {
 	transform: scale(1.1);
+	transition: transform 0.3s ease;
+}
+
+.email {
+	font-size: 60px;
+	letter-spacing: -3px;
+	transition: 700ms ease;
+	font-variation-settings: "wght" 311;
+	color: var(--font-colour);
+}
+
+.email:hover {
+	font-variation-settings: "wght" 582;
+	letter-spacing: 1px;
 }

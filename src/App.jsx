@@ -113,6 +113,17 @@ function App() {
 					))}
 				</div>
 			</div>
+			<div
+				style={{
+					minHeight: "100vh",
+					border: "solid red 2px",
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+				}}
+			>
+				<h1 className="email">kenneth.tseee@gmail.com</h1>
+			</div>
 		</div>
 	);
 }
