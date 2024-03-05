@@ -3,6 +3,7 @@ import { PropTypes } from "prop-types";
 function Skill({ content }) {
 	return (
 		<div
+			className="skill"
 			style={{
 				display: "flex",
 				flexDirection: "column",

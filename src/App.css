@@ -1,5 +1,6 @@
 :root {
 	--background-colour: #060808;
+	/* --background-colour: blue; */
 	--font-colour: #e0e0e0;
 }
 
@@ -10,16 +11,20 @@
 
 h1,
 h2,
+h3,
+span,
+a,
 p {
 	color: var(--font-colour);
 }
 
 body {
 	background-color: var(--background-colour);
+	font-family: Inter;
 	/* #040404 */
 }
 
-img {
+.skill > img {
 	filter: invert(0.95);
 }
 
@@ -72,17 +77,27 @@ img {
 	padding: 10px;
 }
 
-@media (max-width: 768px) {
-	.cards {
+@media (min-width: 1200px) {
+	.project-image {
+		margin-top: -70px;
+		margin-bottom: -30px;
 	}
+}
+
+@media (max-width: 768px) {
 	img {
 		width: 60px;
 	}
 }
 
 @media (max-width: 390px) {
+	.spline {
+		margin-bottom: 50vh;
+	}
+
 	.cards {
 		flex-direction: column;
+		margin-bottom: 80vh;
 	}
 
 	.card {
@@ -92,4 +107,10 @@ img {
 	img {
 		width: 50px;
 	}
+}
+.skill-tag {
+	background-color: rgba(255, 255, 255, 0.05);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 5px;
+	padding: 3px 5px 3px 5px;
 }

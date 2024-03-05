@@ -1,6 +1,7 @@
 import "./App.css";
 import Spline from "@splinetool/react-spline";
 import SkillSubsection from "./components/SkillSubsection";
+import Project from "./components/Project";
 
 // next step figure out how to put skills in a sleek way
 function App() {
@@ -37,9 +38,33 @@ function App() {
 		{ title: "Node.js", src: "/Nodejs-Icon.png", alt: "Node.js Icon" },
 	];
 
+	const projects = [
+		{
+			title: "Memory Card Game",
+			src: "/memory-mockup.png",
+			alt: "Memory Card Game mockup",
+			description:
+				"Memory card game built with the RESTful Poke API. Objective is to click on all unique cards until all have been selected. Able to select from 4 dificulties and play with different cards each time",
+			skills: ["HTML", "CSS", "JS", "React", "Bootstrap"],
+			github: "https://github.com/Kenref/memory-card-game",
+			demo: "https://kenneth-memory-card-game.netlify.app/",
+		},
+		{
+			title: "Calculator",
+			src: "/calculator-mockup.png",
+			alt: "Calculator",
+			description:
+				"A working calculator built using plain Javascript with keyboard functionality and the ability to do consecutive calculations.",
+			skills: ["HTML", "CSS", "JS"],
+			github: "https://github.com/Kenref/calculator",
+			demo: "https://kenref.github.io/calculator/",
+		},
+	];
+
 	return (
 		<div>
 			<Spline
+				className="spline"
 				scene="https://prod.spline.design/DQiuGtWGXvHI6syP/scene.splinecode"
 				style={{
 					height: "100vh",
@@ -76,6 +101,24 @@ function App() {
 						title="Other"
 						contents={other}
 					/>
+				</div>
+			</div>
+			<div style={{ minHeight: "100vh" }}>
+				<h1 style={{ textAlign: "center" }}>Projects</h1>
+				<div
+					style={{
+						display: "flex",
+						flexDirection: "column",
+						justifyContent: "center",
+						alignItems: "center",
+					}}
+				>
+					{projects.map((project, index) => (
+						<Project
+							project={project}
+							key={index}
+						/>
+					))}
 				</div>
 			</div>
 		</div>
