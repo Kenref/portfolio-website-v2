@@ -11,7 +11,6 @@ function App() {
 		{ title: "Javascript", src: "/Js-Icon.png", alt: "JS ICON" },
 		{ title: "Python", src: "/Python-Icon.png", alt: "Python Icon" },
 	];
-	// TODO replace three.js logo
 	const libAndFram = [
 		{ title: "React", src: "/React-Icon.png", alt: "React Icon" },
 		{
@@ -24,11 +23,6 @@ function App() {
 			title: "Django (Beginner)",
 			src: "/Django-Icon.png",
 			alt: "Django Icon",
-		},
-		{
-			title: "Three.js (Beginner)",
-			src: "/Threejs-Icon.png",
-			alt: "Three.js Icon",
 		},
 	];
 
@@ -68,7 +62,7 @@ function App() {
 				scene="https://prod.spline.design/DQiuGtWGXvHI6syP/scene.splinecode"
 				style={{
 					height: "100vh",
-					borderBottom: "10px solid #020404",
+					// borderBottom: "10px solid #020404",
 				}}
 			/>
 			<div
