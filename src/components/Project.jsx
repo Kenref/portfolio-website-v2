@@ -46,6 +46,7 @@ const Project = ({ project }) => {
 				}}
 			>
 				<a
+					className="link"
 					href={project.github}
 					target="_blank"
 					rel="noopener noreferrer"
@@ -69,6 +70,7 @@ const Project = ({ project }) => {
 					</svg>
 				</a>
 				<a
+					className="link"
 					href={project.demo}
 					target="_blank"
 					rel="noopener noreferrer"
