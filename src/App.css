@@ -74,6 +74,19 @@ img {
 	padding: 10px;
 }
 
+.enlarge-effect {
+	font-size: 60px;
+	letter-spacing: -3px;
+	transition: 700ms ease;
+	font-variation-settings: "wght" 311;
+	color: var(--font-colour);
+}
+
+.enlarge-effect:hover {
+	font-variation-settings: "wght" 582;
+	letter-spacing: 1px;
+}
+
 @media (min-width: 1200px) {
 	.project-image {
 		margin-top: -70px;
@@ -104,6 +117,9 @@ img {
 	img {
 		width: 50px;
 	}
+	.enlarge-effect {
+		font-size: 25px;
+	}
 }
 .skill-tag {
 	background-color: rgba(255, 255, 255, 0.05);
@@ -115,17 +131,4 @@ img {
 .link:hover {
 	transform: scale(1.1);
 	transition: transform 0.3s ease;
-}
-
-.enlarge-effect {
-	font-size: 60px;
-	letter-spacing: -3px;
-	transition: 700ms ease;
-	font-variation-settings: "wght" 311;
-	color: var(--font-colour);
-}
-
-.enlarge-effect:hover {
-	font-variation-settings: "wght" 582;
-	letter-spacing: 1px;
 }
