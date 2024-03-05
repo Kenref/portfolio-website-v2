@@ -36,7 +36,9 @@ const Project = ({ project }) => {
 				src={project.src}
 				alt={project.alt}
 			/>
-			<p style={{ marginBottom: "50px" }}>{project.description}</p>
+			<p style={{ marginBottom: "50px", textAlign: "center" }}>
+				{project.description}
+			</p>
 			<div
 				style={{
 					display: "flex",
