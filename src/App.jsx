@@ -54,10 +54,12 @@ function App() {
 		},
 	];
 
+	//TODO add loading page
+
 	return (
 		<div>
 			<Spline
-				className="spline"
+				className="spline disable-highlight"
 				scene="https://prod.spline.design/DQiuGtWGXvHI6syP/scene.splinecode"
 				style={{
 					height: "100vh",

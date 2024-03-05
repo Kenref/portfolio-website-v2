@@ -16,7 +16,7 @@ function SkillSubsection({ title, contents }) {
 		//TODO try adding a div around these and then making it slightly bigger then do the border thing
 		<div
 			onPointerMove={(e) => onMouseMove(e)}
-			className="card"
+			className="card disable-highlight"
 			style={{
 				height: "100%",
 				display: "flex",
