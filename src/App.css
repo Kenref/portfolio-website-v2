@@ -94,13 +94,13 @@ img {
 	}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 768px) {
 	img {
 		width: 60px;
 	}
 }
 
-@media (max-width: 428px) {
+@media (max-width: 480px) {
 	.spline {
 		margin-bottom: 50vh;
 	}
