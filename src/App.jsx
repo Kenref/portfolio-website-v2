@@ -41,7 +41,10 @@ function App() {
 		<div>
 			<Spline
 				scene="https://prod.spline.design/DQiuGtWGXvHI6syP/scene.splinecode"
-				style={{ height: "100vh" }}
+				style={{
+					height: "100vh",
+					borderBottom: "10px solid #020404",
+				}}
 			/>
 			<div
 				style={{
@@ -53,7 +56,14 @@ function App() {
 				}}
 			>
 				<h1 style={{ textAlign: "center", marginBottom: "20px" }}>Skills</h1>
-				<div style={{ display: "flex", justifyContent: "center", gap: "5px" }}>
+				<div
+					className="cards"
+					style={{
+						display: "flex",
+						justifyContent: "center",
+						gap: "10px",
+					}}
+				>
 					<SkillSubsection
 						title="Languages"
 						contents={languages}

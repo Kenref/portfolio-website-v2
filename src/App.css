@@ -20,7 +20,7 @@ body {
 }
 
 img {
-	filter: invert(1);
+	filter: invert(0.95);
 }
 
 /* hover gradient effect*/
@@ -62,4 +62,34 @@ img {
 
 .card:hover::before {
 	opacity: 1;
+}
+
+img {
+	width: 100px;
+}
+
+.card {
+	padding: 10px;
+}
+
+@media (max-width: 768px) {
+	.cards {
+	}
+	img {
+		width: 60px;
+	}
+}
+
+@media (max-width: 390px) {
+	.cards {
+		flex-direction: column;
+	}
+
+	.card {
+		padding: 10px 10px 30px 10px;
+	}
+
+	img {
+		width: 50px;
+	}
 }

@@ -12,7 +12,6 @@ function Skill({ content }) {
 			<img
 				src={content.src}
 				alt={content.alt}
-				style={{ width: "100px" }}
 			/>
 			<p>{content.title}</p>
 		</div>
