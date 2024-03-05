@@ -96,6 +96,6 @@ const Project = ({ project }) => {
 	);
 };
 
-Project.propTypes = { projects: PropTypes.array };
-// Project.displayName = "Projects";
+Project.propTypes = { project: PropTypes.array };
+
 export default Project;

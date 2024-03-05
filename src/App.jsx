@@ -3,7 +3,6 @@ import Spline from "@splinetool/react-spline";
 import SkillSubsection from "./components/SkillSubsection";
 import Project from "./components/Project";
 
-// next step figure out how to put skills in a sleek way
 function App() {
 	const languages = [
 		{ title: "HTML", src: "/Html-Icon.png", alt: "HTML Icon" },
@@ -62,7 +61,6 @@ function App() {
 				scene="https://prod.spline.design/DQiuGtWGXvHI6syP/scene.splinecode"
 				style={{
 					height: "100vh",
-					// borderBottom: "10px solid #020404",
 				}}
 			/>
 			<div
@@ -120,4 +118,3 @@ function App() {
 }
 
 export default App;
-// TODO remember to change font to match spline

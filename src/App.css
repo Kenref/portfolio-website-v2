@@ -1,6 +1,5 @@
 :root {
 	--background-colour: #060808;
-	/* --background-colour: blue; */
 	--font-colour: #e0e0e0;
 }
 
@@ -21,7 +20,6 @@ p {
 body {
 	background-color: var(--background-colour);
 	font-family: Inter;
-	/* #040404 */
 }
 
 .skill > img {
@@ -36,7 +34,6 @@ body {
 
 .card::before,
 .card::after {
-	/* border-radius: inherit; */
 	content: "";
 	height: 100%;
 	left: 0px;
