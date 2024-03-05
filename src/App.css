@@ -117,7 +117,7 @@ img {
 	transition: transform 0.3s ease;
 }
 
-.email {
+.enlarge-effect {
 	font-size: 60px;
 	letter-spacing: -3px;
 	transition: 700ms ease;
@@ -125,7 +125,7 @@ img {
 	color: var(--font-colour);
 }
 
-.email:hover {
+.enlarge-effect:hover {
 	font-variation-settings: "wght" 582;
 	letter-spacing: 1px;
 }

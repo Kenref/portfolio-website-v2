@@ -116,13 +116,25 @@ function App() {
 			<div
 				style={{
 					minHeight: "100vh",
-					border: "solid red 2px",
 					display: "flex",
+					flexDirection: "column",
 					justifyContent: "center",
 					alignItems: "center",
+					gap: "50px",
 				}}
 			>
-				<h1 className="email">kenneth.tseee@gmail.com</h1>
+				<a
+					className="enlarge-effect"
+					href="mailto:kenneth.tseee@gmail.com"
+				>
+					kenneth.tseee@gmail.com
+				</a>
+				<a
+					className="enlarge-effect"
+					href="https://github.com/Kenref"
+				>
+					github.com/Kenref
+				</a>
 			</div>
 		</div>
 	);
