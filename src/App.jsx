@@ -42,15 +42,15 @@ function App() {
 			github: "https://github.com/Kenref/memory-card-game",
 			demo: "https://kenneth-memory-card-game.netlify.app/",
 		},
-		// {
-		// 	title: "Aim trainer",
-		// 	src: "/aim-trainer.png",
-		// 	alt: "Aim trainer Image",
-		// 	description:
-		// 		"Try to click on all the targets that appear randomly on the screen. Miss 3 times and the game is over. End screen will show your stats",
-		// 	skills: ["Python"],
-		// 	github: "https://github.com/Kenref/aim-trainer",
-		// },
+		{
+			title: "Aim trainer",
+			src: "/aim-mockup.png",
+			alt: "Aim trainer Image",
+			description:
+				"Try to click on all the targets that appear randomly on the screen. Miss 3 times and the game is over. End screen will show your stats",
+			skills: ["Python"],
+			github: "https://github.com/Kenref/aim-trainer",
+		},
 		{
 			title: "Calculator",
 			src: "/calculator-mockup.png",
